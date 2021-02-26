@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MyInfo from './components/MyInfo';
 
 function App() {
+  const[profileStatus, setProfileStatus] = useState(false);
+
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <MyInfo profileStatus={profileStatus}/>
     </div>
   );
 }
