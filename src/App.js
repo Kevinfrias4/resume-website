@@ -16,9 +16,16 @@ function App() {
 }
 
 const Main = styled.div`
-&.library-active {
-  margin-left: 20%;
-}
-`
+  &.profile-active {
+    margin-left: 30%;
+    transition: ease-in;
+  }
+  &.App {
+    transition: all 0.5s ease;
+    * {
+      font-family: "Lato", sans-serif;
+    }
+  }
+`;
 
 export default App;

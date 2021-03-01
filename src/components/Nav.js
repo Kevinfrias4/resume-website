@@ -6,10 +6,11 @@ import { faSmile } from '@fortawesome/free-solid-svg-icons';
 const Nav = ({ setProfileStatus, profileStatus }) => {
     return (
         <StyleNav>
-            <h1>Resume</h1>
+            <h1>Résumé</h1>
             <button onClick={() => setProfileStatus(!profileStatus)}>
                 <FontAwesomeIcon icon={faSmile} size='3x' />
             </button>
+            <h1>Experience</h1>
         </StyleNav>
     );
 }
