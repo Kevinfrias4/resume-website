@@ -16,6 +16,15 @@ const MyInfo = ({ profileStatus }) => {
             <p>
                 Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
             </p>
+            <p>
+                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
+            </p>
+            <p>
+                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
+            </p>
+            <p>
+                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
+            </p>
         </Profile>
     );
 }
@@ -40,14 +49,14 @@ const Profile = styled.div`
         margin-top: 2.2rem;
         padding: 0rem 4rem;
         //color: #ada1a1;
-        color: #b3971c;
+        color: rgb(233, 207, 90);
     }
     p {
         padding: 0rem 4rem;
         color: #ada1a1;
     }
     span {
-        color: #b3971c;
+        color: rgb(233, 207, 90);
         font-weight: bold;
     }
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 //Components
 import Nav from './components/Nav'
 import MyInfo from './components/MyInfo';
+import MainPage from './components/MainPage';
 
 function App() {
   const[profileStatus, setProfileStatus] = useState(false);
@@ -11,6 +12,7 @@ function App() {
     <Main className={`App ${profileStatus ? "profile-active" : ""}`}>
       <Nav profileStatus={profileStatus} setProfileStatus={setProfileStatus} />
       <MyInfo profileStatus={profileStatus}/>
+      <MainPage />
     </Main>
   );
 }

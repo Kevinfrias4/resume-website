@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,19 +8,25 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
     return (
         <StyleNav>
             <h1>Résumé</h1>
-            <button onClick={() => setProfileStatus(!profileStatus)}>
+            <motion.button 
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 2.5 }}
+                onClick={() => setProfileStatus(!profileStatus)}>
                 <FontAwesomeIcon icon={faSmile} size='3x' />
-            </button>
+            </motion.button>
             <h1>Experience</h1>
         </StyleNav>
     );
 }
 
 const StyleNav = styled.div`
+    top: 0;
+    position: sticky;
     min-height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
     h1 {
         font-size: 2.2rem;
     }
