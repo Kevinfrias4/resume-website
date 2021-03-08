@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Nav from './components/Nav'
 import MyInfo from './components/MyInfo';
 import MainPage from './components/MainPage';
+import Strengths from './components/Strengths';
 
 function App() {
   const[profileStatus, setProfileStatus] = useState(false);
@@ -13,6 +14,7 @@ function App() {
       <Nav profileStatus={profileStatus} setProfileStatus={setProfileStatus} />
       <MyInfo profileStatus={profileStatus}/>
       <MainPage />
+      <Strengths />
     </Main>
   );
 }

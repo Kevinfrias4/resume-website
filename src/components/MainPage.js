@@ -32,7 +32,6 @@ const Container = styled(motion.div)`
     height: 100%;
     display: flex;
     justify-content: center;
-    z-index: 2;
     h1 {
         margin-top: 5rem;
         font-size: 12rem;

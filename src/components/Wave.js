@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 const Wave = () => {
     return(
        <WaveSvg
-            height="100%" 
-            width="100%" 
             fillOpacity="1"
             id="bg-svg"
             viewBox="0 0 1440 500" 
@@ -52,8 +50,8 @@ const Wave = () => {
 const WaveSvg = styled.svg`
     position: absolute;
     left: 0;
-    top: 50%;
-    z-index: 3;
+    top: 70%;
+    z-index: -1;
 `;
 
 export default Wave;

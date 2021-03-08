@@ -24,7 +24,7 @@ const StyleNav = styled.div`
     position: sticky;
     min-height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 10;
     h1 {

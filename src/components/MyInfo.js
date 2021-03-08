@@ -9,9 +9,12 @@ const MyInfo = ({ profileStatus }) => {
             <Image src={dog} alt="dog"/>
             <p>
                 <span>Age</span>: 3
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <span>Breed</span>: Golden Retriever
+                <br />
+                <br />
+                <span>Email</span>: ruffruff@barks.com
             </p>
             <p>
                 Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
