@@ -67,3 +67,21 @@ export const titleAnim5 = {
         },
     },
 };
+
+export const cardSlide = {
+    hidden: {
+        opacity: 0,
+        x: -500,
+        transition: {
+            duration: 0.15,
+        },
+    },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            ease: 'easeOut',
+            duration: 1.5,
+        },
+    },
+};

@@ -3,9 +3,8 @@ import styled from 'styled-components';
 
 const Strengths = () => {
     return (
-        <div>
-            <Title>STRENGTHS</Title>
             <StrengthContainer>
+                <Title>Strengths</Title>
                 <Card>
                     <h3>Quick Learner</h3>
                 </Card>
@@ -19,7 +18,6 @@ const Strengths = () => {
                     <h3>Self Motivated</h3>
                 </Card>
             </StrengthContainer>
-        </div>
     );
 }
 
@@ -27,9 +25,9 @@ const StrengthContainer = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     padding: 0;
-    margin: 0;
+    margin-top: 33vh;
     z-index: 9;
     justify-content: center;
 `;
@@ -52,16 +50,14 @@ const Card = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
-    top: 112vh;
-    width: 100%;
+    top: 113vh;
     padding: 0;
     position: absolute;
     justify-content: center;
     color: #5e5e5e;
     opacity: 0.75;
-    //background: lightblue;
 `;
 
 export default Strengths;

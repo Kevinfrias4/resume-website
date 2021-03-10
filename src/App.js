@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import MyInfo from './components/MyInfo';
 import MainPage from './components/MainPage';
 import Strengths from './components/Strengths';
+import Skills from './components/Skills'
 
 function App() {
   const[profileStatus, setProfileStatus] = useState(false);
@@ -15,6 +16,7 @@ function App() {
       <MyInfo profileStatus={profileStatus}/>
       <MainPage />
       <Strengths />
+      <Skills />
     </Main>
   );
 }

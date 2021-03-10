@@ -7717,6 +7717,11 @@ object.values@^1.1.0, object.values@^1.1.1:
     es-abstract "^1.18.0-next.1"
     has "^1.0.3"
 
+observer@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/observer/-/observer-0.0.2.tgz#e8caae19e476dc79acb13586b7c35cc4c181ab56"
+  integrity sha1-6MquGeR23HmssTWGt8NcxMGBq1Y=
+
 obuf@^1.0.0, obuf@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
@@ -9110,6 +9115,16 @@ react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
+
+react-intersection-observer@^8.31.0:
+  version "8.31.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.31.0.tgz#0ed21aaf93c4c0475b22b0ccaba6169076d01605"
+  integrity sha512-XraIC/tkrD9JtrmVA7ypEN1QIpKc52mXBH1u/bz/aicRLo8QQEJQAMUTb8mz4B6dqpPwyzgjrr7Ljv/2ACDtqw==
+
+react-intersection@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-intersection/-/react-intersection-2.0.3.tgz#3b754feb1db04ca5c87a3eacfe914465360dfb6d"
+  integrity sha512-//Hu6CygBfPLLbnMv+5SCylZR5Y9JwCtuEiF69MQK1rwI73yy0Ctt+BQf67foOQU1qt7rRji78SHTbcl0msNcA==
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

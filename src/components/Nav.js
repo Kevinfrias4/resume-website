@@ -14,21 +14,21 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
                 onClick={() => setProfileStatus(!profileStatus)}>
                 <FontAwesomeIcon icon={faSmile} size='3x' />
             </motion.button>
-            <h1>Experience</h1>
+            <h1>Skills</h1>
         </StyleNav>
     );
 }
 
 const StyleNav = styled.div`
     top: 0;
-    position: sticky;
-    min-height: 10vh;
+    //position: sticky;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     z-index: 10;
     h1 {
         font-size: 2.2rem;
+        opacity: 0.5;
     }
     button {
         background: transparent;
