@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components'
 import dog from '../img/dog.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const MyInfo = ({ profileStatus }) => {
     return (
         <Profile className={`profile ${profileStatus ? "active-profile" : ""}`}>
-            <h1>Pup Ruffles</h1>
+            <h1>Kevin Frias</h1>
             <Image src={dog} alt="dog"/>
+            <p>
+                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
+            </p>
             <p>
                 <span>Age</span>: 3
                 <br />
@@ -14,19 +19,10 @@ const MyInfo = ({ profileStatus }) => {
                 <span>Breed</span>: Golden Retriever
                 <br />
                 <br />
-                <span>Email</span>: ruffruff@barks.com
-            </p>
-            <p>
-                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
-            </p>
-            <p>
-                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
-            </p>
-            <p>
-                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
-            </p>
-            <p>
-                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
+                <span><FontAwesomeIcon icon={faEnvelope} /></span> ruffruff@barks.com
+                <br /> 
+                <br />
+                <span><FontAwesomeIcon icon={faPhone} /></span> (162)297-2572
             </p>
         </Profile>
     );

@@ -39,11 +39,11 @@ const Card = styled.div`
     height: 10vh;
     width: 20vh;
     box-shadow: 2px 2px 50px rgb(199, 199, 199);
-    border-radius: 15px;
+    border-radius: 50px;
     overflow: hidden;
     h3 {
         opacity: 0.70;
-        background: -webkit-linear-gradient(silver, darkCyan);
+        background: -webkit-linear-gradient(right, orange, darkCyan);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent
     }
