@@ -5,18 +5,28 @@ import Nav from './components/Nav'
 import MyInfo from './components/MyInfo';
 import MainPage from './components/MainPage';
 import Strengths from './components/Strengths';
-import Skills from './components/Skills'
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import { Switch, Route, useLocation } from 'react-router-dom'
 
 function App() {
   const[profileStatus, setProfileStatus] = useState(false);
+  const location = useLocation();
 
   return (
     <Main className={`App ${profileStatus ? "profile-active" : ""}`}>
       <Nav profileStatus={profileStatus} setProfileStatus={setProfileStatus} />
       <MyInfo profileStatus={profileStatus}/>
-      <MainPage />
-      <Strengths />
-      <Skills />
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/">
+          <MainPage />
+          <Strengths />
+          <Experience />
+        </Route>
+        <Route>
+          <Skills exact path="/skills" />
+        </Route>
+      </Switch>
     </Main>
   );
 }

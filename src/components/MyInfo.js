@@ -9,9 +9,7 @@ const MyInfo = ({ profileStatus }) => {
         <Profile className={`profile ${profileStatus ? "active-profile" : ""}`}>
             <h1>Kevin Frias</h1>
             <Image src={dog} alt="dog"/>
-            <p>
-                Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.
-            </p>
+            <p>Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.</p>
             <p>
                 <span>Age</span>: 3
                 <br />

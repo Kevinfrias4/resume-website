@@ -3,18 +3,28 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Nav = ({ setProfileStatus, profileStatus }) => {
+
     return (
         <StyleNav>
-            <h1>Résumé</h1>
+            <h1>
+                <Link to="/">
+                    Résumé  
+                </Link>
+            </h1>
             <motion.button 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 2.5 }}
                 onClick={() => setProfileStatus(!profileStatus)}>
                 <FontAwesomeIcon icon={faSmile} size='3x' />
             </motion.button>
-            <h1>Skills</h1>
+            <h1>
+                <Link to="/skills">
+                    Skills
+                </Link>
+            </h1>
         </StyleNav>
     );
 }
@@ -26,6 +36,11 @@ const StyleNav = styled.div`
     justify-content: space-around;
     align-items: center;
     z-index: 10;
+    a {
+        text-decoration: none;
+        opacity: 0.5;
+        color: black;
+    }
     h1 {
         font-size: 2.2rem;
         opacity: 0.5;
