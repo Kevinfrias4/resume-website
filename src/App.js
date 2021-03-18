@@ -7,9 +7,11 @@ import MainPage from './components/MainPage';
 import Strengths from './components/Strengths';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
-import { Switch, Route, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  
   const[profileStatus, setProfileStatus] = useState(false);
   const location = useLocation();
 
@@ -17,16 +19,18 @@ function App() {
     <Main className={`App ${profileStatus ? "profile-active" : ""}`}>
       <Nav profileStatus={profileStatus} setProfileStatus={setProfileStatus} />
       <MyInfo profileStatus={profileStatus}/>
-      <Switch location={location} key={location.pathname}>
-        <Route exact path="/">
-          <MainPage />
-          <Strengths />
-          <Experience />
-        </Route>
-        <Route>
-          <Skills exact path="/skills" />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/">
+            <MainPage />
+            <Strengths />
+            <Experience />
+          </Route>
+          <Route exact path="/skills">
+            <Skills />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </Main>
   );
 }

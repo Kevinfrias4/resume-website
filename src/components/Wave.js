@@ -25,7 +25,9 @@ const Wave = () => {
                 stroke="none" 
                 stroke-width="0" 
                 fill="url(#gradient)" 
-                class="transition-all duration-300 ease-in-out delay-150">
+                class="transition-all duration-300 ease-in-out delay-150"
+                >
+                
             </motion.path>
         </WaveSvg>
         

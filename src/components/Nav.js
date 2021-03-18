@@ -49,11 +49,12 @@ const StyleNav = styled.div`
         background: transparent;
         border: none;
         cursor: pointer;
+        margin-right: 2.5rem;
         //border: 2px solid rgb(65, 65, 65);
         //border: 2px solid rgb(37, 166, 195);
         border-radius: 50px;
         padding: .75rem;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         :focus {
             outline: 0;
         }

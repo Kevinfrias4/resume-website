@@ -39,7 +39,7 @@ const Experience = () => {
             <Card ref={element3} variants={cardSlide} animate={controls3} initial="hidden">
                 <FontAwesomeIcon icon={faBriefcase} size="2x" color="orange" />
                 <h2>Target (Backroom Logistics Team Member)</h2>
-                <p> March 2016 - May 2018</p>
+                <h5> March 2016 - May 2018</h5>
                 <br />
                 <CardBody>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nostrum veniam libero enim dolorem magni perferendis reiciendis architecto sint qui eaque, consequuntur blanditiis vel quis, fugiat vitae non cupiditate aut?</p>
@@ -86,6 +86,7 @@ const Card = styled(motion.div)`
     }
     h5 {
         margin-top: 0rem;
+        opacity: 0.3;
     }
     span {
         font-size: 1.5rem;

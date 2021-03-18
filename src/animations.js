@@ -81,7 +81,14 @@ export const cardSlide = {
         x: 0,
         transition: {
             ease: 'easeOut',
-            duration: 1.5,
+            duration: 1,
+        },
+    },
+    exit: {
+        x: -500,
+        opacity: 0,
+        transition: {
+            duration: 0.7,
         },
     },
 };
