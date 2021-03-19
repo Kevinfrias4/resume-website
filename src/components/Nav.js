@@ -3,15 +3,24 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Nav = ({ setProfileStatus, profileStatus }) => {
+
+    const { pathname } = useLocation();
 
     return (
         <StyleNav>
             <h1>
                 <Link to="/">
-                    Résumé  
+                    <motion.h1
+                        whileTap={{ scale: 4 }}
+                        transition={{duration: 0.75}} 
+                        initial={{ color: "", opacity: "0.5"}}
+                        animate={{ color: pathname === '/' ? "green" : ""}}
+                    > 
+                    Résumé 
+                    </motion.h1> 
                 </Link>
             </h1>
             <motion.button 
@@ -22,7 +31,14 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
             </motion.button>
             <h1>
                 <Link to="/skills">
-                    Skills
+                    <motion.h1 
+                        whileTap={{ scale: 4}}
+                        transition={{duration: 0.75}} 
+                        initial={{ color: ""}}
+                        animate={{ color: pathname === '/skills' ? "green" : ""}}
+                    >
+                        Skills
+                    </motion.h1>
                 </Link>
             </h1>
         </StyleNav>
@@ -43,7 +59,9 @@ const StyleNav = styled.div`
     }
     h1 {
         font-size: 2.2rem;
-        opacity: 0.5;
+        opacity: 0.7;
+        padding: 0;
+        margin: 0.8rem;
     }
     button {
         background: transparent;

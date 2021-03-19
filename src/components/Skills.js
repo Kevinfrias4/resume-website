@@ -62,7 +62,7 @@ const Skills = () => {
                         <FontAwesomeIcon icon={faStar} color='gold' />
                         <FontAwesomeIcon icon={faStar} color='gold' />
                         <FontAwesomeIcon icon={faStar} color='gold' />
-                        <FontAwesomeIcon icon={faStar} color='gold' />
+                        <FontAwesomeIcon icon={faStar} color='grey' />
                     </Rating>
                 </Card>
             </SkillsContainer>
