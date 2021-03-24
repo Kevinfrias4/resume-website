@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 import dog from '../img/dog.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import ContactForm from './ContactForm';
 
 const MyInfo = ({ profileStatus }) => {
+
+    const[showForm, setShowForm] = useState(false);
+    
+    const showForm1 = () => {
+        setShowForm(!showForm);
+    }
+
     return (
         <Profile className={`profile ${profileStatus ? "active-profile" : ""}`}>
-            <h1>Kevin Frias</h1>
+            <h1>Pup Ruffles</h1>
             <Image src={dog} alt="dog"/>
             <p>Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.</p>
             <p>
@@ -22,6 +30,10 @@ const MyInfo = ({ profileStatus }) => {
                 <br />
                 <span><FontAwesomeIcon icon={faPhone} /></span> (162)297-2572
             </p>
+                <button type="button" onClick={showForm1}>Send a message?</button>
+            {showForm && (
+                <ContactForm />
+            )}
         </Profile>
     );
 }
@@ -37,7 +49,7 @@ const Profile = styled.div`
     width: 20rem;
     border-radius: 10px;
     box-shadow: 2px 2px 50px rgb(182, 180, 180);
-    overflow: scroll;
+    overflow: hidden;
     z-index: 10;
     transform: translateX(-100%);
     transition: all 0.5s ease;
@@ -55,6 +67,24 @@ const Profile = styled.div`
     span {
         color: rgb(233, 207, 90);
         font-weight: bold;
+    }
+    button {
+        cursor: pointer;
+        font-size: 20px;
+        outline: none;
+        margin-left: 7rem;
+        margin-top: 0rem;
+        border: none;
+        padding: 0.2rem;
+        color: orange;
+        background: none;
+        &:hover {
+            transform: scale(1.3);
+            transition: 0.5s ease;
+        }
+        &:not(hover) {
+            transition: 0.5s ease;
+        }
     }
 
     &::-webkit-scrollbar {

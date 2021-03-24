@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { cardSlide } from '../animations';
+import { cardSlide, titleAnim6 } from '../animations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import Wave2 from './Wave2';
 
 const Skills = () => {
@@ -67,9 +67,12 @@ const Skills = () => {
                 </Card>
             </SkillsContainer>
             <Wave2 />
-            <Education>
+            <Education variants={titleAnim6} exit='exit' initial='hidden' animate='show' >
+                <FontAwesomeIcon icon={faGraduationCap} size="2x" color="orange" />
                 <h1>Education</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, veritatis.</p>
+                <EduCard>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, veritatis.</p>
+                </EduCard>
             </Education>
         </>
     );
@@ -99,7 +102,7 @@ const Card = styled.div`
     border: solid #b1c8b8;
     background: white;
     h3 {
-        font-size: 18px;
+        font-size: 25px;
         opacity: 0.80;
         background: -webkit-linear-gradient(right, orange, darkCyan);
         -webkit-background-clip: text;
@@ -119,18 +122,31 @@ const Card = styled.div`
     }
 `;
 
-const Education = styled.div`
+const Education = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 59vh;
+    h1 {
+        font-size: 1.5rem;
+        opacity: 0.5;
+        margin-top: 0;
+    }
 `;
 
 const Rating = styled.div`
     display: flex;
     justify-content: center;
     opacity: 0.70;
+`;
+
+const EduCard = styled.div`
+    border-radius: 25px;
+    height: 70vh;
+    width: 85%;
+    box-shadow: 2px 2px 50px rgb(199, 199, 199);
+    padding: 1rem;
 `;
 
 export default Skills;

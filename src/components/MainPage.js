@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { titleAnim, titleAnim2, titleAnim3, titleAnim4, titleAnim5 } from '../animations';
+import { titleAnim, titleAnim2, titleAnim3, titleAnim4, titleAnim5, titleAnim6 } from '../animations';
 import Wave from './Wave';
 
 const MainPage = () => {
@@ -22,7 +22,7 @@ const MainPage = () => {
             <Hide>
                 <motion.h1 variants={titleAnim5} initial="hidden" animate="show">O</motion.h1>
             </Hide>
-            <Wave />
+            <Wave exit='exit'variants={titleAnim6} initial='hidden' animate='show' />
         </Container>
     );
 }

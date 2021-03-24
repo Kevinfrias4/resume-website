@@ -14,7 +14,7 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
             <h1>
                 <Link to="/">
                     <motion.h1
-                        whileTap={{ scale: 4 }}
+                        whileTap={{ color: 'orange' }}
                         transition={{duration: 0.75}} 
                         initial={{ color: "", opacity: "0.5"}}
                         animate={{ color: pathname === '/' ? "green" : ""}}
@@ -32,7 +32,7 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
             <h1>
                 <Link to="/skills">
                     <motion.h1 
-                        whileTap={{ scale: 4}}
+                        whileTap={{ color: 'orange'}}
                         transition={{duration: 0.75}} 
                         initial={{ color: ""}}
                         animate={{ color: pathname === '/skills' ? "green" : ""}}

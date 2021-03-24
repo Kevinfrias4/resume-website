@@ -18,7 +18,7 @@ function App() {
   return (
     <Main className={`App ${profileStatus ? "profile-active" : ""}`}>
       <Nav profileStatus={profileStatus} setProfileStatus={setProfileStatus} />
-      <MyInfo profileStatus={profileStatus}/>
+      <MyInfo profileStatus={profileStatus} />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route exact path="/">

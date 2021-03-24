@@ -68,6 +68,52 @@ export const titleAnim5 = {
     },
 };
 
+export const titleAnim6 = {
+    hidden: {
+        y: 500,
+        opacity: 0,
+    },
+    show: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            ease: 'easeOut',
+            duration: 1.2,
+        },
+    },
+    exit: {
+        y: 500,
+        opacity: 0,
+        transition: {
+            duration: 0.7,
+        },
+    }
+};
+
+export const contactFormAnim = {
+    hidden: {
+        y: 0,
+        scale: 0,
+        opacity: 0,
+    },
+    show: {
+        y: -350,
+        scale: 1,
+        opacity: 1,
+        transition: {
+            ease: 'easeOut',
+            duration: 1,
+        },
+    },
+    exit: {
+        y: 0,
+        opacity: 0,
+        transition: {
+            duration: 0.7,
+        },
+    }
+};
+
 export const cardSlide = {
     hidden: {
         opacity: 0,
