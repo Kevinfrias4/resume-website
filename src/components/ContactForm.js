@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence} from 'framer-motion';
 import { contactFormAnim } from '../animations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
@@ -8,36 +8,54 @@ import { faComment } from '@fortawesome/free-solid-svg-icons';
 const ContactForm = () => {
 
     const[message, setMessage] = useState('Wow I\'m Popular!');
-    const[color, setColor] = useState({color: "white"})
-    const[hideForm, setHideForm] = useState(true);
+    const[message1, setMessage1] = useState('Shoot me a message!')
+    const[color, setColor] = useState({color: "white"});
+    const[hideForm, setHideForm] = useState(true)
 
-    const handleSubmit = (e) => {
+    const handleText = (e) => {
         setMessage(e.target.value);
+        setMessage1(e.target.value)
     }
 
-    const resetForm = (e) => { 
-        setMessage('')
+    const clear = (e) => {
+        if(e.target.value.length > 0) {
+            setMessage1('')
+            setMessage('')
+        }
+    }
+
+    const handleSubmit = () => {
+        setTimeout(() => {
+            setMessage('Message Sent!');
+            setColor({color: 'lightgreen'});
+            setMessage1('thank you!')
+        }, 800);
+    }
+
+    const hideForm1 = () => {
+        setTimeout(() => {
+            setHideForm(!hideForm);
+        }, 2500);
     }
 
     return (
-        <>
+        <AnimatePresence>
         {hideForm && (
             <Form 
                 variants={contactFormAnim}
-                exit="exit" 
+                exit='exit'
                 initial="hidden" 
                 animate="show"
-                onSubmit={resetForm}
             >   
                 <FontAwesomeIcon icon={faComment} size='2x' color='white' />
                 <h4 style={color}>{message}</h4>
                 <label>
-                    <textarea type="text" placeholder={'Shoot me a message!'} onChange={handleSubmit} />
-                    <input type="submit" value="Submit" onClick={() => {setMessage('Message Sent!'); setColor({color: 'lightgreen'})}} />
+                    <textarea type="text" value={message1} onClick={clear} onChange={handleText} />
+                    <input type="submit" value="Submit" onClick={() => {handleSubmit(); hideForm1()}} />
                 </label>
             </Form>
         )}
-        </>
+        </AnimatePresence>
     );
 }
 
@@ -49,7 +67,7 @@ const Form = styled(motion.div)`
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 50px rgb(182, 180, 180);
-    //border: solid #9cdb3d;
+    //border: solid #7bc30f;
     border-radius: 50px;
     padding: 0.5rem;
     margin: 1rem;
@@ -80,6 +98,7 @@ const Form = styled(motion.div)`
         }
         textarea {
             text-align: center;
+            justify-content: center;
             border: none;
             height: 3rem;
             outline: none;

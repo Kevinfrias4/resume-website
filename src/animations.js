@@ -94,12 +94,12 @@ export const contactFormAnim = {
     hidden: {
         y: 0,
         scale: 0,
-        opacity: 0,
+        //opacity: 0,
     },
     show: {
-        y: -350,
+        y: -445,
         scale: 1,
-        opacity: 1,
+        //opacity: 1,
         transition: {
             ease: 'easeOut',
             duration: 1,
@@ -107,9 +107,11 @@ export const contactFormAnim = {
     },
     exit: {
         y: 0,
-        opacity: 0,
+        scale: 0,
+        //opacity: 0,
         transition: {
-            duration: 0.7,
+            //ease: 'easeOut',
+            duration: 0.5,
         },
     }
 };

@@ -73,7 +73,7 @@ const Profile = styled.div`
         font-size: 20px;
         outline: none;
         margin-left: 7rem;
-        margin-top: 0rem;
+        margin-top: 1.5rem;
         border: none;
         padding: 0.2rem;
         color: orange;
