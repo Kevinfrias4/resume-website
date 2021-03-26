@@ -4,13 +4,18 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
+import { navAnim } from '../animations';
 
 const Nav = ({ setProfileStatus, profileStatus }) => {
 
     const { pathname } = useLocation();
 
     return (
-        <StyleNav>
+        <StyleNav 
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+        >
             <h1>
                 <Link to="/">
                     <motion.h1
@@ -37,7 +42,7 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
                         initial={{ color: ""}}
                         animate={{ color: pathname === '/skills' ? "green" : ""}}
                     >
-                        Skills
+                        Education
                     </motion.h1>
                 </Link>
             </h1>
@@ -45,7 +50,7 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
     );
 }
 
-const StyleNav = styled.div`
+const StyleNav = styled(motion.div)`
     top: 0;
     //position: sticky;
     display: flex;
@@ -67,7 +72,7 @@ const StyleNav = styled.div`
         background: transparent;
         border: none;
         cursor: pointer;
-        margin-right: 2.5rem;
+        margin-left: 2rem;
         //border: 2px solid rgb(65, 65, 65);
         //border: 2px solid rgb(37, 166, 195);
         border-radius: 50px;

@@ -25,7 +25,7 @@ const MyInfo = ({ profileStatus }) => {
                 <span>Breed</span>: Golden Retriever
                 <br />
                 <br />
-                <span><FontAwesomeIcon icon={faEnvelope} /></span> ruffruff@barks.com
+                <a href="mailto:ruffruff@barks.com"><span><FontAwesomeIcon icon={faEnvelope} /></span> ruffruff@barks.com</a>
                 <br /> 
                 <br />
                 <span><FontAwesomeIcon icon={faPhone} /></span> (162)297-2572
@@ -54,6 +54,10 @@ const Profile = styled.div`
     transform: translateX(-100%);
     transition: all 0.5s ease;
     opacity: 0;
+    a {
+        text-decoration: none;
+        color: #ada1a1;
+    }
     h1 {
         margin-top: 2.2rem;
         padding: 0rem 4rem;

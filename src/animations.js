@@ -140,3 +140,21 @@ export const cardSlide = {
         },
     },
 };
+
+export const navAnim = {
+    hidden: {
+        opacity: -10,
+        y: -500,
+        transition: {
+            duration: 0.15,
+        },
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            ease: 'easeOut',
+            duration: 3.25,
+        },
+    }
+};
