@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 import dog from '../img/dog.png';
+import { motion, AnimatePresence } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from './ContactForm';
@@ -31,9 +32,11 @@ const MyInfo = ({ profileStatus }) => {
                 <span><FontAwesomeIcon icon={faPhone} /></span> (162)297-2572
             </p>
                 <button type="button" onClick={showForm1}>Send a message?</button>
-            {showForm && (
-                <ContactForm />
-            )}
+            <AnimatePresence>
+                {motion.showForm && (
+                    <ContactForm showForm={showForm} setShowForm={setShowForm} />
+                )}
+            </AnimatePresence>
         </Profile>
     );
 }

@@ -5,13 +5,13 @@ import { contactFormAnim } from '../animations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-const ContactForm = () => {
+const ContactForm = ({showForm, setShowForm}) => {
 
     const[message, setMessage] = useState('Wow I\'m Popular!');
     const[message1, setMessage1] = useState('')
     const[submitMessage, setSubmitMessage] = useState('Cancel');
     const[color, setColor] = useState({color: "white"});
-    const[hideForm, setHideForm] = useState(true);
+    //const[hideForm, setHideForm] = useState(true);
     const[icon, setIcon] = useState(<FontAwesomeIcon className='icon' icon={faComment} size='3x' color='white' />);
 
     const handleText = (e) => {
@@ -39,24 +39,32 @@ const ContactForm = () => {
                 setMessage('Message Sent!');
                 setColor({color: 'lightgreen', fontSize: '35px'});
                 setMessage1('thank you!');
+                setSubmitMessage('Sent')
                 setIcon(<FontAwesomeIcon className='icon' icon={faCheckCircle} size='3x' color='white' />)
-            }, 800);
+            }, 800)
+            setTimeout(() => {
+                setMessage('Wow I\'m Popular!')
+                setColor({color: 'white', fontSize: '25px'})
+                setMessage1('')
+                setSubmitMessage('Cancel')
+                setIcon(<FontAwesomeIcon className='icon' icon={faComment} size='3x' color='white' />)
+            }, 3000)
         }
     }
 
     const hideForm1 = () => {
         if (submitMessage === 'Send') {
             setTimeout(() => {
-                setHideForm(!hideForm);
+                setShowForm(!showForm);
             }, 2500);
         } else {
-            setHideForm(!hideForm);
+            setShowForm(!showForm);
         }
     }
 
     return (
         <AnimatePresence>
-        {hideForm && (
+        {showForm && (
             <Form 
                 variants={contactFormAnim}
                 exit='exit'
@@ -127,6 +135,7 @@ const Form = styled(motion.div)`
             height: 3rem;
             outline: none;
             border-radius: 10px;
+            resize: none;
         }
     }
     h4 {

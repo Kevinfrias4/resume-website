@@ -7,6 +7,7 @@ import MainPage from './components/MainPage';
 import Strengths from './components/Strengths';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import Footer from './components/Footer';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -31,6 +32,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </Main>
   );
 }

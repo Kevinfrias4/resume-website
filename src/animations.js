@@ -158,3 +158,21 @@ export const navAnim = {
         },
     }
 };
+
+export const footerAnim = {
+    hidden: {
+        opacity: 0,
+        y: 50,
+        transition: {
+            duration: 1.25,
+        },
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            ease: 'easeOut',
+            duration: 0.75,
+        },
+    }
+};
