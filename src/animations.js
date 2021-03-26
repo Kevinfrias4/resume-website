@@ -1,7 +1,7 @@
 export const titleAnim = {
     hidden: {
         y: -500,
-        opacity: 0,
+        opacity: -1,
     },
     show: {
         y: 0,
@@ -15,7 +15,7 @@ export const titleAnim = {
 export const titleAnim2 = {
     hidden: {
         y: 500,
-        opacity: 0,
+        opacity: -1,
     },
     show: {
         y: 0,
@@ -29,7 +29,7 @@ export const titleAnim2 = {
 export const titleAnim3 = {
     hidden: {
         y: -500,
-        opacity: 0,
+        opacity: -1,
     },
     show: {
         y: 0,
@@ -43,7 +43,7 @@ export const titleAnim3 = {
 export const titleAnim4 = {
     hidden: {
         y: 500,
-        opacity: 0,
+        opacity: -1,
     },
     show: {
         y: 0,
@@ -57,7 +57,7 @@ export const titleAnim4 = {
 export const titleAnim5 = {
     hidden: {
         y: -500,
-        opacity: 0,
+        opacity: -1,
     },
     show: {
         y: 0,
@@ -70,7 +70,7 @@ export const titleAnim5 = {
 
 export const titleAnim6 = {
     hidden: {
-        y: 500,
+        y: 100,
         opacity: 0,
     },
     show: {
@@ -78,7 +78,7 @@ export const titleAnim6 = {
         opacity: 1,
         transition: {
             ease: 'easeOut',
-            duration: 1.2,
+            duration: 1.4,
         },
     },
     exit: {
@@ -129,7 +129,7 @@ export const cardSlide = {
         x: 0,
         transition: {
             ease: 'easeOut',
-            duration: 1,
+            duration: 0.7,
         },
     },
     exit: {
@@ -154,7 +154,7 @@ export const navAnim = {
         y: 0,
         transition: {
             ease: 'easeOut',
-            duration: 3.25,
+            duration: 3.75,
         },
     }
 };

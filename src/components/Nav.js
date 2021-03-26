@@ -35,12 +35,12 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
                 <FontAwesomeIcon icon={faSmile} size='3x' />
             </motion.button>
             <h1>
-                <Link to="/skills">
+                <Link to="/education">
                     <motion.h1 
                         whileTap={{ color: 'orange'}}
                         transition={{duration: 0.75}} 
                         initial={{ color: ""}}
-                        animate={{ color: pathname === '/skills' ? "green" : ""}}
+                        animate={{ color: pathname === '/education' ? "green" : ""}}
                     >
                         Education
                     </motion.h1>

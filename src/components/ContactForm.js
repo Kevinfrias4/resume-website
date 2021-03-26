@@ -11,8 +11,8 @@ const ContactForm = () => {
     const[message1, setMessage1] = useState('')
     const[submitMessage, setSubmitMessage] = useState('Cancel');
     const[color, setColor] = useState({color: "white"});
-    const[hideForm, setHideForm] = useState(true)
-    const[icon, setIcon] = useState(<FontAwesomeIcon className='icon' icon={faComment} size='2x' color='white' />)
+    const[hideForm, setHideForm] = useState(true);
+    const[icon, setIcon] = useState(<FontAwesomeIcon className='icon' icon={faComment} size='3x' color='white' />);
 
     const handleText = (e) => {
         e.preventDefault();
@@ -37,7 +37,7 @@ const ContactForm = () => {
         if (submitMessage === 'Send') {
             setTimeout(() => {
                 setMessage('Message Sent!');
-                setColor({color: 'lightgreen'});
+                setColor({color: 'lightgreen', fontSize: '35px'});
                 setMessage1('thank you!');
                 setIcon(<FontAwesomeIcon className='icon' icon={faCheckCircle} size='3x' color='white' />)
             }, 800);

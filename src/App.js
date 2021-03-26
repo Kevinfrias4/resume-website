@@ -6,7 +6,7 @@ import MyInfo from './components/MyInfo';
 import MainPage from './components/MainPage';
 import Strengths from './components/Strengths';
 import Experience from './components/Experience';
-import Skills from './components/Skills';
+import Education from './components/Education';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -26,8 +26,8 @@ function App() {
             <Strengths />
             <Experience />
           </Route>
-          <Route exact path="/skills">
-            <Skills />
+          <Route exact path="/education">
+            <Education />
           </Route>
         </Switch>
       </AnimatePresence>
