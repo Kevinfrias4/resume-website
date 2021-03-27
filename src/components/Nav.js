@@ -21,8 +21,8 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
                     <motion.h1
                         whileTap={{ color: 'orange' }}
                         transition={{duration: 0.75}} 
-                        initial={{ color: "", opacity: "0.5"}}
-                        animate={{ color: pathname === '/' ? "green" : ""}}
+                        initial={{ color: "" }}
+                        animate={{ color: pathname === '/' ? "lightseagreen" : "", opacity: pathname === '/' ? 1 : 0.5 }}
                     > 
                     Résumé 
                     </motion.h1> 
@@ -40,7 +40,7 @@ const Nav = ({ setProfileStatus, profileStatus }) => {
                         whileTap={{ color: 'orange'}}
                         transition={{duration: 0.75}} 
                         initial={{ color: ""}}
-                        animate={{ color: pathname === '/education' ? "green" : ""}}
+                        animate={{ color: pathname === '/education' ? "lightseagreen" : "", opacity: pathname === '/education' ? 1 : 0.5}}
                     >
                         Education
                     </motion.h1>
@@ -60,13 +60,17 @@ const StyleNav = styled(motion.div)`
     a {
         text-decoration: none;
         opacity: 0.5;
-        color: black;
+        color: #bdbdbd;
+        &:hover {
+            color: orange;
+        }
     }
     h1 {
         font-size: 2.2rem;
-        opacity: 0.7;
+        //opacity: 0.7;
         padding: 0;
         margin: 0.8rem;
+        letter-spacing: 10px;
     }
     button {
         background: transparent;

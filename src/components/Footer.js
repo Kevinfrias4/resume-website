@@ -22,16 +22,16 @@ const Footer = () => {
 
 const FooterContainer = styled(motion.div)`
     display: flex;
-    justify-content: space-around;
-    //border-top: solid black;
+    justify-content: space-between;
+    //border-top: solid lightsteelblue;
     //box-shadow: 2px 2px 50px rgb(199, 199, 199);
-    padding: 0.2rem;
+    padding: 5rem;
+    padding-bottom: 1rem;
     margin-top: 3rem;
-    left: 0;
     //border-radius: 50px 50px 0px 0px;
-    .Icon {
-        display: flex;
-        justify-content: space-between
+    .icon {
+        //display: flex;
+        //justify-content: space-between
     }
 `;
 

@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { titleAnim, titleAnim2, titleAnim3, titleAnim4, titleAnim5, titleAnim6 } from '../animations';
+import { titleAnim, titleAnim2, titleAnim3, titleAnim4, titleAnim5, titleAnim7 } from '../animations';
 import Wave from './Wave';
+import back from '../img/back.jpg'
 
 const MainPage = () => {
     return (
         <Container>
+            <motion.img exit='exit'variants={titleAnim7} initial='hidden' animate='show'src={back} alt=""/>
             <Hide>
                 <motion.h1 variants={titleAnim} initial="hidden" animate="show">H</motion.h1>
             </Hide>
@@ -22,7 +24,7 @@ const MainPage = () => {
             <Hide>
                 <motion.h1 variants={titleAnim5} initial="hidden" animate="show">O</motion.h1>
             </Hide>
-            <Wave exit='exit'variants={titleAnim6} initial='hidden' animate='show' />
+            <Wave />
         </Container>
     );
 }
@@ -38,6 +40,14 @@ const Container = styled(motion.div)`
         font-weight: 700;
         //color: #4dc0a3;
         color: rgb(233, 207, 90);
+    }
+    img {
+        top: 0%;
+        height: 113.5%;
+        z-index: -1;
+        position: fixed;
+        width: 100%;
+        object-fit: cover;
     }
 `;
 

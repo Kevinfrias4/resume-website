@@ -90,6 +90,50 @@ export const titleAnim6 = {
     }
 };
 
+export const titleAnim7 = {
+    hidden: {
+        y: -100,
+        opacity: 0.1,
+    },
+    show: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            ease: 'easeOut',
+            duration: 2.4,
+        },
+    },
+    exit: {
+        y: -100,
+        opacity: 0.1,
+        transition: {
+            duration: 1.5,
+        },
+    }
+};
+
+export const titleAnim8 = {
+    hidden: {
+        y: -100,
+        opacity: 1,
+    },
+    show: {
+        y: 0,
+        opacity: 0.3,
+        transition: {
+            ease: 'easeOut',
+            duration: 2.4,
+        },
+    },
+    exit: {
+        y: -100,
+        opacity: 0.1,
+        transition: {
+            duration: 1.5,
+        },
+    }
+};
+
 export const contactFormAnim = {
     hidden: {
         y: 0,
@@ -101,8 +145,10 @@ export const contactFormAnim = {
         scale: 1,
         //opacity: 1,
         transition: {
+            type: 'spring',
             ease: 'easeOut',
-            duration: 1,
+            bounce: 0.3,
+            duration: 1.75,
         },
     },
     exit: {
@@ -162,17 +208,19 @@ export const navAnim = {
 export const footerAnim = {
     hidden: {
         opacity: 0,
+        scale: 0,
         y: 50,
         transition: {
             duration: 1.25,
         },
     },
     show: {
+        scale: 1,
         opacity: 1,
-        y: 0,
+        y: 6,
         transition: {
             ease: 'easeOut',
-            duration: 0.75,
+            duration: 1,
         },
     }
 };

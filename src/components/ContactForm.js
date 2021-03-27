@@ -11,7 +11,6 @@ const ContactForm = ({showForm, setShowForm}) => {
     const[message1, setMessage1] = useState('')
     const[submitMessage, setSubmitMessage] = useState('Cancel');
     const[color, setColor] = useState({color: "white"});
-    //const[hideForm, setHideForm] = useState(true);
     const[icon, setIcon] = useState(<FontAwesomeIcon className='icon' icon={faComment} size='3x' color='white' />);
 
     const handleText = (e) => {
@@ -23,14 +22,6 @@ const ContactForm = ({showForm, setShowForm}) => {
             setSubmitMessage('Cancel');
         }
         setMessage1(e.target.value);
-    }
-
-    const clear = (e) => {
-        e.preventDefault();
-        if(e.target.value.length > 0) {
-            setMessage1('')
-            //setMessage('')
-        }
     }
 
     const handleSubmit = () => {
@@ -77,7 +68,7 @@ const ContactForm = ({showForm, setShowForm}) => {
                     <input type="name" placeholder='Your Name' />
                 </label>
                 <label>
-                    <textarea type="text" value={message1} placeholder='Your Message' onClick={clear} onChange={handleText} />
+                    <textarea type="text" value={message1} placeholder='Your Message' onChange={handleText} />
                     <input type="submit" value={submitMessage} onClick={() => {handleSubmit(); hideForm1()}} />
                 </label>
             </Form>

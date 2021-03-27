@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from './ContactForm';
+import book from '../img/book4.jpg';
 
 const MyInfo = ({ profileStatus }) => {
 
@@ -16,6 +17,7 @@ const MyInfo = ({ profileStatus }) => {
 
     return (
         <Profile className={`profile ${profileStatus ? "active-profile" : ""}`}>
+            <IMG src={book} alt=""/>
             <h1>Pup Ruffles</h1>
             <Image src={dog} alt="dog"/>
             <p>Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.</p>
@@ -40,6 +42,15 @@ const MyInfo = ({ profileStatus }) => {
         </Profile>
     );
 }
+
+const IMG = styled.img`
+    position: fixed;
+    width: 100%;
+    height: 30%;
+    z-index: -2;
+    object-fit: cover;
+    opacity: 0.3;
+`;
 
 const Profile = styled.div`
     background: white;

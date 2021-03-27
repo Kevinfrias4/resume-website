@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { cardSlide, titleAnim6 } from '../animations';
+import { cardSlide, titleAnim6, titleAnim8 } from '../animations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import Wave2 from './Wave2';
+import book from '../img/book.jpg'
 
 const Skills = () => {
     return (
         <>
+            <IMG exit='exit'variants={titleAnim8} initial='hidden' animate='show'src={book} alt=""/>
             <SkillsContainer 
                 exit="exit" 
                 variants={cardSlide} 
@@ -78,6 +80,15 @@ const Skills = () => {
     );
 };
 
+const IMG = styled(motion.img)`
+    top: 0%;
+    height: 113.5%;
+    z-index: -2;
+    position: fixed;
+    width: 100%;
+    object-fit: cover;
+`;
+
 const SkillsContainer = styled(motion.div)`
     margin-top: 0rem;
     margin-right: 0rem;
@@ -86,7 +97,7 @@ const SkillsContainer = styled(motion.div)`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    overflow-y: hidden
+    overflow-y: hidden;
 `;
 
 const Card = styled.div`
@@ -99,8 +110,8 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid #b1c8b8;
-    background: white;
+    border: solid #b3dbbf;
+    background: #ffffff;
     h3 {
         font-size: 25px;
         opacity: 0.80;
@@ -142,6 +153,7 @@ const Rating = styled.div`
 `;
 
 const EduCard = styled.div`
+    background: white;
     border-radius: 25px;
     height: 70vh;
     width: 85%;

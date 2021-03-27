@@ -68,6 +68,7 @@ const ExperienceContainer = styled.div`
 const Card = styled(motion.div)`
     margin: 2rem 0.7rem;
     //background: #fdffef;
+    background: white;
     padding: 1rem;
     height: 70vh;
     width: 75%;
