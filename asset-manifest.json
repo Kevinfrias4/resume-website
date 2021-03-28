@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/Kevinfrias4/resume-website/static/js/main.e41c53cc.chunk.js",
-    "main.js.map": "/Kevinfrias4/resume-website/static/js/main.e41c53cc.chunk.js.map",
-    "runtime-main.js": "/Kevinfrias4/resume-website/static/js/runtime-main.74b0b3da.js",
-    "runtime-main.js.map": "/Kevinfrias4/resume-website/static/js/runtime-main.74b0b3da.js.map",
-    "static/js/2.bbca7f30.chunk.js": "/Kevinfrias4/resume-website/static/js/2.bbca7f30.chunk.js",
-    "static/js/2.bbca7f30.chunk.js.map": "/Kevinfrias4/resume-website/static/js/2.bbca7f30.chunk.js.map",
-    "static/js/3.ec07371d.chunk.js": "/Kevinfrias4/resume-website/static/js/3.ec07371d.chunk.js",
-    "static/js/3.ec07371d.chunk.js.map": "/Kevinfrias4/resume-website/static/js/3.ec07371d.chunk.js.map",
+    "main.js": "/Kevinfrias4/resume-website/static/js/main.5198b5c1.chunk.js",
+    "main.js.map": "/Kevinfrias4/resume-website/static/js/main.5198b5c1.chunk.js.map",
+    "runtime-main.js": "/Kevinfrias4/resume-website/static/js/runtime-main.172d0322.js",
+    "runtime-main.js.map": "/Kevinfrias4/resume-website/static/js/runtime-main.172d0322.js.map",
+    "static/js/2.0de1eaf5.chunk.js": "/Kevinfrias4/resume-website/static/js/2.0de1eaf5.chunk.js",
+    "static/js/2.0de1eaf5.chunk.js.map": "/Kevinfrias4/resume-website/static/js/2.0de1eaf5.chunk.js.map",
+    "static/js/3.9c1472eb.chunk.js": "/Kevinfrias4/resume-website/static/js/3.9c1472eb.chunk.js",
+    "static/js/3.9c1472eb.chunk.js.map": "/Kevinfrias4/resume-website/static/js/3.9c1472eb.chunk.js.map",
     "index.html": "/Kevinfrias4/resume-website/index.html",
-    "static/js/2.bbca7f30.chunk.js.LICENSE.txt": "/Kevinfrias4/resume-website/static/js/2.bbca7f30.chunk.js.LICENSE.txt",
+    "static/js/2.0de1eaf5.chunk.js.LICENSE.txt": "/Kevinfrias4/resume-website/static/js/2.0de1eaf5.chunk.js.LICENSE.txt",
     "static/media/back.da7f70ad.jpg": "/Kevinfrias4/resume-website/static/media/back.da7f70ad.jpg",
     "static/media/book.cccd4e3d.jpg": "/Kevinfrias4/resume-website/static/media/book.cccd4e3d.jpg",
     "static/media/book4.61465450.jpg": "/Kevinfrias4/resume-website/static/media/book4.61465450.jpg",
@@ -20,8 +20,8 @@
     "static/media/soung.f2801e96.png": "/Kevinfrias4/resume-website/static/media/soung.f2801e96.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.74b0b3da.js",
-    "static/js/2.bbca7f30.chunk.js",
-    "static/js/main.e41c53cc.chunk.js"
+    "static/js/runtime-main.172d0322.js",
+    "static/js/2.0de1eaf5.chunk.js",
+    "static/js/main.5198b5c1.chunk.js"
   ]
 }
