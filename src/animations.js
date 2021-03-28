@@ -165,7 +165,7 @@ export const contactFormAnim = {
 export const cardSlide = {
     hidden: {
         opacity: 0,
-        x: -500,
+        x: -100,
         transition: {
             duration: 0.15,
         },
@@ -179,7 +179,7 @@ export const cardSlide = {
         },
     },
     exit: {
-        x: -500,
+        x: -100,
         opacity: 0,
         transition: {
             duration: 0.7,

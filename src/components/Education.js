@@ -110,7 +110,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid #b3dbbf;
+    border: solid #83b6b3;
     background: #ffffff;
     h3 {
         font-size: 25px;
@@ -130,6 +130,16 @@ const Card = styled.div`
     }
     &:not(hover) {
         transition: 0.7s ease;
+    }
+    @media screen and (max-width: 768px) {
+        margin: 0.2rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        height: 13vh;
+        font-size: 5px;
+        h3 {
+            font-size: 10px;
+        }
     }
 `;
 

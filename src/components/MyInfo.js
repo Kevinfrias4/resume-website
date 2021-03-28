@@ -19,7 +19,7 @@ const MyInfo = ({ profileStatus }) => {
         <Profile className={`profile ${profileStatus ? "active-profile" : ""}`}>
             <IMG src={book} alt=""/>
             <h1>Pup Ruffles</h1>
-            <Image src={dog} alt="dog"/>
+            <Image className='dog' src={dog} alt="dog"/>
             <p>Bone collecting is my new hobby.  Walks in the park are my favorite as well as beef treats.</p>
             <p>
                 <span>Age</span>: 3
@@ -102,6 +102,30 @@ const Profile = styled.div`
         }
         &:not(hover) {
             transition: 0.5s ease;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        h1 {
+            text-align: center;
+            padding: 0;
+        }
+        span, p {
+            font-size: 17px;
+        }
+        p {
+            padding: 0rem 2rem;
+        }
+        button {
+            margin-left: 5rem;
+            margin-bottom: 0;
+            padding: 0;
+        }
+        .dog {
+            padding: 2rem 2rem 2rem 2rem
         }
     }
 

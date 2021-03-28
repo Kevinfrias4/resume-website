@@ -47,6 +47,14 @@ const Card = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent
     }
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        font-size: 9px;
+        text-align: center;
+        height: 6vh;
+        border-radius: 10px;
+        margin: 7rem 0.2rem;
+    }
 `;
 
 const Title = styled.h1`
@@ -58,6 +66,10 @@ const Title = styled.h1`
     justify-content: center;
     color: #5e5e5e;
     opacity: 0.75;
+    @media screen and (max-width: 768px) {
+        font-size: 0.5rem;
+        top: 98vh;
+    }
 `;
 
 export default Strengths;

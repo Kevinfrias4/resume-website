@@ -144,6 +144,26 @@ const Form = styled(motion.div)`
         padding: 0;
         margin: 0;
     }
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+        font-size: 18px;
+        height: 50vh;
+        margin-top: 1.5rem;
+        margin-left: 1.1rem;
+        height: 58vh;
+        label {
+            input {
+                width: 9rem;
+                &:hover {
+                background: #7fdf7f;
+                color: white;
+                transform: scale(1.01);
+                transition: 0.3s ease-in;
+                }
+            }
+        }
+    }
 `;
 
 export default ContactForm;

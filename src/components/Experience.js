@@ -16,7 +16,7 @@ const Experience = () => {
         <ExperienceContainer>
             <h1>Experience</h1>
             <Card ref={element} variants={cardSlide} animate={controls} initial="hidden">
-                <FontAwesomeIcon icon={faBriefcase} size="2x" color="orange" />
+                <FontAwesomeIcon className='icon' icon={faBriefcase} size="2x" color="orange" />
                 <h2>Ultimate Worldwide Logistics (Regional Driver)</h2>
                 <h5>August 2020 - October 2020</h5>
                 <br />
@@ -28,7 +28,7 @@ const Experience = () => {
                 </CardBody>
             </Card>
             <Card ref={element2} variants={cardSlide} animate={controls2} initial="hidden">
-                <FontAwesomeIcon icon={faBriefcase} size="2x" color="orange" />
+                <FontAwesomeIcon className='icon' icon={faBriefcase} size="2x" color="orange" />
                 <h2>Schneider National (Regional Driver)</h2>
                 <h5>September 2018 - February 2020</h5>
                 <br/>
@@ -37,7 +37,7 @@ const Experience = () => {
                 </CardBody>
             </Card>
             <Card ref={element3} variants={cardSlide} animate={controls3} initial="hidden">
-                <FontAwesomeIcon icon={faBriefcase} size="2x" color="orange" />
+                <FontAwesomeIcon className='icon' icon={faBriefcase} size="2x" color="orange" />
                 <h2>Target (Backroom Logistics Team Member)</h2>
                 <h5> March 2016 - May 2018</h5>
                 <br />
@@ -63,16 +63,32 @@ const ExperienceContainer = styled.div`
         opacity: 0.75;
         margin-bottom: 0;
     }
+    @media screen and (max-width: 768px) {
+        margin-top: -5rem;
+        height: 180vh;
+        h1 {
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 0.5rem;
+        }
+        h5, li, p {
+            font-size: 0.2rem;
+        }
+        .icon {
+            font-size: 15px;
+        }
+    }
 `;
 
 const Card = styled(motion.div)`
     margin: 2rem 0.7rem;
-    //background: #fdffef;
+    //background: #82c8c5;
     background: white;
     padding: 1rem;
     height: 70vh;
     width: 75%;
-    box-shadow: 2px 2px 50px rgb(199, 199, 199);
+    //box-shadow: 2px 2px 50px rgb(199, 199, 199);
     border-radius: 25px;
     overflow: hidden;
     display: flex;
@@ -96,13 +112,26 @@ const Card = styled(motion.div)`
 
 const CardBody = styled.div`
     //border: solid lightblue;
+    border-radius: 15px;
     height: 35vh;    
     background: #a8d1d1;
-    box-shadow: 2px 2px 50px rgb(199, 199, 199);
+    //background: white;
+    //box-shadow: 2px 2px 50px rgb(199, 199, 199);
     padding: 1rem;
     margin: 1rem;
     p {
         line-height: 50px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 20vh;
+        margin: 0;
+        p {
+            line-height: 20px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
     }
 `;
 

@@ -49,6 +49,18 @@ const Container = styled(motion.div)`
         width: 100%;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 768px) {
+        svg {
+            top: 88vh;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        img {
+            width: 100%;
+        }
+    }
 `;
 
 const Hide = styled.div`

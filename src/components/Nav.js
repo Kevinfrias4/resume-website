@@ -76,7 +76,7 @@ const StyleNav = styled(motion.div)`
         background: transparent;
         border: none;
         cursor: pointer;
-        margin-left: 2rem;
+        margin-left: 3rem;
         //border: 2px solid rgb(65, 65, 65);
         //border: 2px solid rgb(37, 166, 195);
         border-radius: 50px;
@@ -91,6 +91,21 @@ const StyleNav = styled(motion.div)`
             color: white;
             box-shadow: 0 0 10px rgb(255, 251, 31), 
             0 0 10px rgb(237, 251, 39);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 1rem;
+        h1 {
+            font-size: 1rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        button {
+            font-size: 10px;
+            z-index: 12;
+            padding: 0;
+            margin-left: 2rem;
+            margin-right: 1rem;
         }
     }
 `;
