@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/Kevinfrias4/resume-website/static/js/main.e41c53cc.chunk.js",
+    "main.js.map": "/Kevinfrias4/resume-website/static/js/main.e41c53cc.chunk.js.map",
+    "runtime-main.js": "/Kevinfrias4/resume-website/static/js/runtime-main.74b0b3da.js",
+    "runtime-main.js.map": "/Kevinfrias4/resume-website/static/js/runtime-main.74b0b3da.js.map",
+    "static/js/2.bbca7f30.chunk.js": "/Kevinfrias4/resume-website/static/js/2.bbca7f30.chunk.js",
+    "static/js/2.bbca7f30.chunk.js.map": "/Kevinfrias4/resume-website/static/js/2.bbca7f30.chunk.js.map",
+    "static/js/3.ec07371d.chunk.js": "/Kevinfrias4/resume-website/static/js/3.ec07371d.chunk.js",
+    "static/js/3.ec07371d.chunk.js.map": "/Kevinfrias4/resume-website/static/js/3.ec07371d.chunk.js.map",
+    "index.html": "/Kevinfrias4/resume-website/index.html",
+    "static/js/2.bbca7f30.chunk.js.LICENSE.txt": "/Kevinfrias4/resume-website/static/js/2.bbca7f30.chunk.js.LICENSE.txt",
+    "static/media/back.da7f70ad.jpg": "/Kevinfrias4/resume-website/static/media/back.da7f70ad.jpg",
+    "static/media/book.cccd4e3d.jpg": "/Kevinfrias4/resume-website/static/media/book.cccd4e3d.jpg",
+    "static/media/book4.61465450.jpg": "/Kevinfrias4/resume-website/static/media/book4.61465450.jpg",
+    "static/media/dog.46eedee7.png": "/Kevinfrias4/resume-website/static/media/dog.46eedee7.png",
+    "static/media/insta.c8009274.svg": "/Kevinfrias4/resume-website/static/media/insta.c8009274.svg",
+    "static/media/linkedin.357bb3eb.png": "/Kevinfrias4/resume-website/static/media/linkedin.357bb3eb.png",
+    "static/media/react.73ac128a.png": "/Kevinfrias4/resume-website/static/media/react.73ac128a.png",
+    "static/media/soung.f2801e96.png": "/Kevinfrias4/resume-website/static/media/soung.f2801e96.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74b0b3da.js",
+    "static/js/2.bbca7f30.chunk.js",
+    "static/js/main.e41c53cc.chunk.js"
+  ]
+}
