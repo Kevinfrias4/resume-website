@@ -41,6 +41,7 @@ const Main = styled.div`
   &.profile-active {
     margin-left: 30%;
     transition: ease-in;
+    overflow: hidden;
   }
   &.App {
     transition: all 0.5s ease;

@@ -149,9 +149,9 @@ const Form = styled(motion.div)`
         width: 80%;
         font-size: 18px;
         height: 50vh;
-        margin-top: 1.5rem;
+        margin-top: 1.7rem;
         margin-left: 1.1rem;
-        height: 58vh;
+        height: 55vh;
         label {
             input {
                 width: 9rem;

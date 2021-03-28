@@ -108,7 +108,9 @@ const Profile = styled.div`
     @media screen and (max-width: 768px) {
         width: 100%;
         height: 100%;
-        overflow-x: hidden;
+        body {
+            overflow: none;
+        }
         h1 {
             text-align: center;
             padding: 0;
@@ -125,7 +127,8 @@ const Profile = styled.div`
             padding: 0;
         }
         .dog {
-            padding: 2rem 2rem 2rem 2rem
+            margin-left: 3rem;
+            padding: 0rem 0rem 0rem 0rem
         }
     }
 
@@ -143,6 +146,7 @@ const Profile = styled.div`
     &.active-profile {
         transform: translateX(0%);
         opacity: 1;
+        overflow: hidden;
     }
 `;
 
