@@ -68,7 +68,7 @@ const ContactForm = ({showForm, setShowForm}) => {
                     <input type="name" placeholder='Your Name' />
                 </label>
                 <label>
-                    <textarea type="text" value={message1} placeholder='Your Message' onChange={handleText} />
+                    <textarea fontSize='16px' type="text" value={message1} placeholder='Your Message' onChange={handleText} />
                     <input type="submit" value={submitMessage} onClick={() => {handleSubmit(); hideForm1()}} />
                 </label>
             </Form>
@@ -146,7 +146,7 @@ const Form = styled(motion.div)`
     }
 
     @media screen and (max-width: 768px) {
-        width: 80%;
+        width: 85%;
         font-size: 18px;
         height: 50vh;
         margin-top: 1.7rem;
