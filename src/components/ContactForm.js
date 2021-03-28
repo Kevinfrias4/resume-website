@@ -65,10 +65,10 @@ const ContactForm = ({showForm, setShowForm}) => {
                 <div>{icon}</div>
                 <h4 style={color}>{message}</h4>
                 <label>
-                    <input type="name" placeholder='Your Name' />
+                    <input name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" type="name" placeholder='Your Name' />
                 </label>
                 <label>
-                    <textarea type="text" value={message1} placeholder='Your Message' onChange={handleText} />
+                    <textarea  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" type="text" value={message1} placeholder='Your Message' onChange={handleText} />
                     <input type="submit" value={submitMessage} onClick={() => {handleSubmit(); hideForm1()}} />
                 </label>
             </Form>
@@ -95,6 +95,7 @@ const Form = styled(motion.div)`
         display: flex;
         flex-direction: column;
         input{
+            font-size: 16px;
             text-align: center;
             justify-content: center;
             cursor: pointer;
