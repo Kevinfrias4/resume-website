@@ -69,7 +69,7 @@ const ContactForm = ({showForm, setShowForm}) => {
                 </label>
                 <label>
                     <textarea  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" type="text" value={message1} placeholder='Your Message' onChange={handleText} />
-                    <input type="submit" value={submitMessage} onClick={() => {handleSubmit(); hideForm1()}} />
+                    <input  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" type="submit" value={submitMessage} onClick={() => {handleSubmit(); hideForm1()}} />
                 </label>
             </Form>
         )}
